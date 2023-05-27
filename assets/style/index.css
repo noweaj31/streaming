@@ -6,6 +6,7 @@
 }
 .container .back-img {
   background-image: linear-gradient(to bottom right, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(/assets/image/KR-ko-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-repeat: no-repeat;
 }
 header {
   padding: 3rem 3.2rem;
@@ -24,34 +25,53 @@ header {
 }
 .header-area .login-area {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 .header-area .login-area .select-area {
   display: flex;
-  justify-content: space-between;
-  padding: 6px 15px;
-  border: 1px solid rgba(212, 212, 212, 0.922);
+  position: relative;
+  border: 0.5px solid rgba(212, 212, 212, 0.922);
   background-color: rgba(0, 0, 0, 0.429);
   border-radius: 4px;
+  
+}
+
+.header-area .login-area .select-area .select-button {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 0.75rem;
+  right: auto;
+  position: absolute;
+  pointer-events: none;
+
+
 }
 .header-area .login-area .select-area label {
   display: flex;
 }
-.header-area .login-area .select-area img:nth-of-type(1) {
-  font-size: 10rem;
-  color: #fff;
-  
-  height: 100%;
-}
+
 .header-area .login-area .select-area select {
+  width: 100%;
+  height: 100%;
   border: none;
+  padding: 6px 36px;
   appearance: none;
   background: none;
   color: #fff;
   min-width: auto;
-  padding-left: 8px;
+  
   font-size: 1.6rem;
   font-weight: 700;
+  
+}
+.header-area .login-area .select-area .arrow-down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
 }
 .header-area .login-area button {
   padding: 4px 16px;
@@ -108,36 +128,50 @@ header {
   flex: 0 0 33.33%;
   text-decoration: underline;
 }
-
 .footer-area .select-area {
   display: flex;
-  justify-content: space-between;
-  padding: 6px 15px;
-  border: 1px solid rgba(212, 212, 212, 0.922);
+  position: relative;
+  border: 0.5px solid rgba(212, 212, 212, 0.922);
   background-color: rgba(0, 0, 0, 0.429);
   border-radius: 4px;
   width: 13rem;
-  height: 3.2rem;
   margin-top: 3.6rem;
-}
-
-.footer-area .select-area img:nth-of-type(1) {
-  font-size: 10rem;
-  color: #fff;
-  width: 100%;
-  height: 100%;
   
 }
+
+.footer-area .select-area .select-button {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.6rem;
+  height: 1.6rem;
+  left: 0.75rem;
+  right: auto;
+  position: absolute;
+  pointer-events: none;
+
+
+}
 .footer-area .select-area select {
+  max-width: 100%;
+  height: 100%;
   border: none;
+  padding: 6px 36px;
   appearance: none;
   background: none;
   color: #fff;
   min-width: auto;
-  padding-left: 8px;
+  
   font-size: 1.6rem;
   font-weight: 700;
+  
 }
+.footer-area .select-area .arrow-down {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 8px;
+}
+
 .footer-area .footer-title {
   font-size: 1.4rem;
   margin-top: 3.6rem;
@@ -203,17 +237,20 @@ section .main-content .input-area button,
  
   flex: 0 0 auto;
   background-color: #e50914;
-  padding: 12px 24px;
+  padding: 14px 24px;
   color: #fff;
   font-weight: 600;
   font-size: 2.4rem;
   border-radius: 4px;
   margin-left: 8px;
+  line-height: 1;
+  
 }
 section .main-content .input-area button i,
 .question-content .input-area button i {
   margin-left: 4px;
   font-size: 2rem;
+  line-height: 1;
  
 }
 @media screen and (max-width: 959px) {
@@ -244,7 +281,7 @@ section .main-content .input-area button i,
   display: flex;
   flex-wrap: wrap;
   margin-top: 10rem;
-  padding: 0 3.2rem;
+  background: linear-gradient(rgba(0, 0, 0, 0) 10%,black);
   gap: 16px;
   margin-right: -16px;
 }
@@ -257,7 +294,7 @@ section .main-content .input-area button i,
 .category-content div h3 {
   font-size: 2.4rem;
   color: #fff;
-  margin-top: 1.6rem;
+  line-height: 0;
   word-break: keep-all;
 }
 .category-content div p {
@@ -301,6 +338,9 @@ section .main-content .input-area button i,
   margin-bottom: 8px;
   border-radius: 2px;
 }
+.question-content .button-area button:hover {
+  background-color: rgba(34, 51, 98, 1);
+}
 .question-content .button-area button p {
   font-size: 2.4rem;
   font-weight: 600;
@@ -309,6 +349,7 @@ section .main-content .input-area button i,
   font-size: 36px;
 }
 .background-color {
+  padding: 0 3.2rem;
   background: linear-gradient(rgba(0, 0, 0, 0) 10%,black);
 }
 
