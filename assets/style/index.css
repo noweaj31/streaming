@@ -72,6 +72,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   right: 8px;
+  pointer-events: none;
 }
 .header-area .login-area button {
   padding: 4px 16px;
@@ -170,6 +171,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   right: 8px;
+  pointer-events: none;
 }
 
 .footer-area .footer-title {
@@ -222,7 +224,7 @@ section .main-content .input-area,
 }
 section .main-content .input-area input,
 .question-content .input-area input {
-  padding: 2.4rem 1.6rem 0.8rem;
+  padding: 1.6rem 1.6rem 1.6rem;
   border: 1px solid rgba(212, 212, 212, 0.922);
   background-color: rgba(0, 0, 0, 0.429);
   border-radius: 4px;
@@ -237,7 +239,7 @@ section .main-content .input-area button,
  
   flex: 0 0 auto;
   background-color: #e50914;
-  padding: 14px 24px;
+  padding: 16px 24px;
   color: #fff;
   font-weight: 600;
   font-size: 2.4rem;
@@ -340,6 +342,7 @@ section .main-content .input-area button i,
 }
 .question-content .button-area button:hover {
   background-color: rgba(34, 51, 98, 1);
+  transition: 0.3s;
 }
 .question-content .button-area button p {
   font-size: 2.4rem;
