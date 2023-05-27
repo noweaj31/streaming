@@ -193,6 +193,15 @@ header {
     flex: 0 0 50%;
   }
 }
+@media screen and (max-width: 599px) {
+  .footer-area .question-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-area {
+    padding: 0 1.6rem 9.6rem;
+  }
+}
 
 /* section main-content */
 
@@ -204,17 +213,20 @@ section .main-content h1 {
   color: #fff;
   font-weight: 900;
   margin-top: 1.6rem;
+  word-break: keep-all;
 }
 section .main-content p {
   font-size: 1.8rem;
   color: #fff;
   margin-top: 1.6rem;
+  word-break: keep-all;
 }
 section .main-content h2,
 .question-content h2:nth-of-type(2) {
   font-size: 2rem;
   color: #fff;
   margin-top: 3.2rem;
+  word-break: keep-all;
 }
 section .main-content .input-area,
 .question-content .input-area {
@@ -232,6 +244,7 @@ section .main-content .input-area input,
   font-weight: 600;
   width: 423px;
   height: 56px;
+  
   
 }
 section .main-content .input-area button,
@@ -272,7 +285,16 @@ section .main-content .input-area button i,
     flex-direction: column;
     align-items: flex-start;
   }
+  .question-content .input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   section .main-content .input-area button {
+    margin-left: 0;
+    margin-top: 1.6rem;
+  }
+  .question-content .input-area button {
     margin-left: 0;
     margin-top: 1.6rem;
   }
@@ -296,7 +318,7 @@ section .main-content .input-area button i,
 .category-content div h3 {
   font-size: 2.4rem;
   color: #fff;
-  line-height: 0;
+  line-height: 1.2;
   word-break: keep-all;
 }
 .category-content div p {
@@ -304,13 +326,26 @@ section .main-content .input-area button i,
   color: #fff;
   margin-top: 1.6rem;
   word-break: keep-all;
+  line-height: 2rem;
 }
 @media screen and (max-width: 599px) {
   .category-content {
     flex-direction: column;
     
   }
+  
 }
+@media screen and (max-width: 959px) {
+  .category-content div {
+    padding: 26px 40px 40px;
+  }
+}
+@media screen and (max-width: 403px) {
+  .category-content div {
+    padding: 22px 16px 32px;
+  }
+}
+
 
 /* question-content */
 .question-content {
@@ -347,9 +382,23 @@ section .main-content .input-area button i,
 .question-content .button-area button p {
   font-size: 2.4rem;
   font-weight: 600;
+  word-break: keep-all;
 }
 .question-content .button-area button i {
   font-size: 36px;
+}
+@media screen and (max-width: 959px) {
+  .question-content .button-area button p {
+    font-size: 1.8rem;
+  }
+  .question-content .button-area button i {
+    font-size: 1.6rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .question-content {
+    padding: 0 1.6rem 9.6rem;
+  }
 }
 .background-color {
   padding: 0 3.2rem;
