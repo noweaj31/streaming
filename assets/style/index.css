@@ -5,7 +5,7 @@
   height: 100%;
 }
 .container .back-img {
-  background-image: linear-gradient(to bottom right, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(./assets/image/background-img.jpg);
+  background-image: linear-gradient(to bottom right, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(../image/background-img.jpg);
   background-repeat: no-repeat;
 }
 header {
@@ -332,7 +332,7 @@ section .main-content .input-area button i,
   display: flex;
   flex-wrap: wrap;
   margin-top: 10rem;
-  background: linear-gradient(rgba(0, 0, 0, 0) 10%,black);
+  
   gap: 16px;
   margin-right: -16px;
 }
@@ -448,7 +448,7 @@ section .main-content .input-area button i,
 }
 .background-color {
   padding: 0 3.2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0) 10%,black);
+  background: linear-gradient(rgba(0, 0, 0, 0) ,black);
 }
 
 @media screen and (max-width: 599px) {
