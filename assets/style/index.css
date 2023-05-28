@@ -5,7 +5,7 @@
   height: 100%;
 }
 .container .back-img {
-  background-image: linear-gradient(to bottom right, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(/assets/image/KR-ko-20230515-popsignuptwoweeks-perspective_alpha_website_large.jpg);
+  background-image: linear-gradient(to bottom right, rgba(0, 8, 29, 0.9) 23.83%, rgba(0, 8, 29, 0.3) 96.1%), url(./assets/image/background-img.jpg);
   background-repeat: no-repeat;
 }
 header {
