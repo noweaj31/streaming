@@ -187,6 +187,9 @@ header {
 }
 
 @media screen and (max-width: 959px) {
+  .footer-area {
+    padding: 0 0 7.6rem;
+  }
   .footer-area .question-list li {
     flex: 0 0 50%;
   }
@@ -395,7 +398,8 @@ section .main-content .input-area button i,
   flex-direction: column;
   margin-top: 1.6rem;
 }
-.question-content .button-area button {
+
+.question-content .button-area .tab-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -405,22 +409,23 @@ section .main-content .input-area button i,
   margin-bottom: 8px;
   border-radius: 2px;
 }
-.question-content .button-area button:hover {
+.question-content .button-area .tab-btn[aria-expanded="true"] i {
+  transform: rotate(45deg);
+}
+.question-content .button-area .tab-btn:hover {
   background-color: rgba(34, 51, 98, 1);
   transition: 0.3s;
 }
-.question-content .button-area button p {
+.question-content .button-area .tab-btn p {
   font-size: 2.4rem;
   font-weight: 600;
   word-break: keep-all;
+  text-align: left;
 }
-.question-content .button-area button i {
+.question-content .button-area .tab-btn i {
   font-size: 36px;
 }
 .question-content .button-area .bottom-content {
-  /* display: flex; */
-  display: none;
-  flex-direction: column;
   font-size: 2.4rem;
   font-weight: 600;
   word-break: keep-all;
@@ -432,6 +437,7 @@ section .main-content .input-area button i,
   margin-bottom: 2.4rem;
 }
 .question-content .button-area .bottom-content span {
+  display: block;
   padding-bottom: 2rem;
 }
 .question-content .button-area .bottom-content a {
@@ -450,10 +456,13 @@ section .main-content .input-area button i,
   width: 100%;
 }
 @media screen and (max-width: 959px) {
-  .question-content .button-area button p {
+  .question-content {
+    padding: 0 0 7.2rem;
+  }
+  .question-content .button-area .tab-btn p {
     font-size: 1.8rem;
   }
-  .question-content .button-area button i {
+  .question-content .button-area .tab-btn i {
     font-size: 1.6rem;
   }
   .question-content .input-area input {
@@ -464,7 +473,7 @@ section .main-content .input-area button i,
   .question-content {
     padding: 0 1.6rem 9.6rem;
   }
-  .question-content .button-area button p {
+  .question-content .button-area .tab-btn p {
     text-align: left;
   }
 }

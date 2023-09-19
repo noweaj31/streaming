@@ -1,8 +1,20 @@
 "use strict";
 
-const tabBtns = document.querySelectorAll(".button-area .tab-btn");
-const tabContents = document.querySelectorAll(".bottom-content");
+const accordionItem = document.querySelectorAll(".accordion-item");
 
-tabBtns.addEventListener("click", () => {
-  tabContents.style.display = "flex";
+accordionItem.forEach((item) => {
+  const tabBtn = item.querySelector(".tab-btn");
+  const bottomContent = item.querySelector(".bottom-content");
+
+  tabBtn.addEventListener("click", () => {
+    const expanded = tabBtn.getAttribute("aria-expanded") === "true";
+
+    tabBtn.setAttribute("aria-expanded", !expanded);
+
+    if (expanded) {
+      bottomContent.setAttribute("hidden", "true");
+    } else {
+      bottomContent.removeAttribute("hidden");
+    }
+  });
 });
