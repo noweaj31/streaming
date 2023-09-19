@@ -7,10 +7,10 @@
 .container .back-img {
   background-image: linear-gradient(
       to bottom right,
-      rgba(0, 8, 29, 0.9) 23.83%,
-      rgba(0, 8, 29, 0.3) 96.1%
+      rgba(0, 8, 29, 0.9) -20%,
+      rgba(0, 8, 29, 0.3) 100%
     ),
-    url(../image/background-img.jpg);
+    url(../image/background-img\ 복사.jpg);
   background-repeat: no-repeat;
 }
 header {
