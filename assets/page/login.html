@@ -25,27 +25,38 @@
                 <h1>로그인</h1>
                 <div class="login-form">
                   <div class="id-area">
-                    <input type="text" />
-                    <label for="">이메일 주소 또는 전화번호</label>
+                    <label for class="input-id" placeholder>
+                      <input type="text" class="userid" id="user-id" />
+                      <label for="user-id" class="text"
+                        >이메일 주소 또는 전화번호</label
+                      >
+                    </label>
                   </div>
                 </div>
                 <div class="pw-form">
                   <div class="pw-area">
-                    <input type="text" placeholder="비밀번호" />
+                    <label for="" class="input-pw" placeholder>
+                      <input type="text" class="userpw" id="user-pw" />
+                      <label for="user-pw" class="text">비밀번호</label>
+                    </label>
                   </div>
                 </div>
                 <button class="login-btn">로그인</button>
                 <div class="help-area">
-                  <div>
-                    <input type="checkbox" />
-                    <span>로그인 정보 저장</span>
+                  <div class="cb-area">
+                    <input type="checkbox" id="check1" />
+                    <label for="check1">
+                      <span>로그인 정보 저장</span>
+                    </label>
                   </div>
                   <a href="">도움이 필요하신가요?</a>
                 </div>
               </div>
               <div class="other-login">
-                <div>Netflix 회원이 아닌가요? <a href="">가입하세요</a></div>
-                <div>
+                <div class="sign-area">
+                  Netflix 회원이 아닌가요? <a href="">지금 가입하세요</a>
+                </div>
+                <div class="detail-area">
                   <span
                     >이 페이지는 Google reCAPTCHA의 보호를 받아 사용자가 로봇이
                     아님을 확인합니다.</span
@@ -57,58 +68,50 @@
           </div>
         </div>
         <div class="footer-area">
-          <div class="inquiry">
-            질문이 있으신가요? 문의 전화:
-            <a href="tel">080-001-9587</a>
-          </div>
-          <ul class="question-list">
-            <li>자주 묻는 질문</li>
-            <li>고객 센터</li>
-            <li>계정</li>
-            <li>미디어 센터</li>
-            <li>투자 정보(IR)</li>
-            <li>입사 정보</li>
-            <li>넷플릭스 지원 디바이스</li>
-            <li>이용 약관</li>
-            <li>개인정보 처리방침</li>
-            <li>쿠키 설정</li>
-            <li>회사 정보</li>
-            <li>문의하기</li>
-            <li>속도 테스트</li>
-            <li>법적 고지</li>
-            <li>오직 넷플릭스에서</li>
-          </ul>
-          <div class="select-area">
-            <img
-              class="select-button"
-              src="../../assets/image/select-img.png"
-              alt=""
-            />
-            <select name="" id="">
-              <option value="">한국어</option>
-              <option value="">English</option>
-            </select>
-            <img
-              class="arrow-down"
-              src="../../assets/image/select-image2.png"
-              alt=""
-            />
-          </div>
-          <p class="footer-title">넷플릭스 대한민국</p>
-          <div class="footer-content">
-            <p>
-              넷플릭스서비시스코리아 유한회사 통신판매업신고번호:
-              제2018-서울종로-0426호 전화번호: 080-001-9587
-            </p>
-            <p>대표: 레지널드 숀 톰프슨</p>
-            <p>이메일 주소: korea@netflix.com</p>
-            <p>
-              주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동
-              20층 우편번호 03161
-            </p>
-            <p>사업자등록번호: 165-87-00119</p>
-            <p>클라우드 호스팅: Amazon Web Services Inc.</p>
-            <p><a href="">공정거래위원회 웹사이트</a></p>
+          <div class="footer-box">
+            <div class="inquiry">
+              질문이 있으신가요? 문의 전화:
+              <a href="tel">080-001-9587</a>
+            </div>
+            <ul class="question-list">
+              <li>자주 묻는 질문</li>
+              <li>고객 센터</li>
+              <li>이용 약관</li>
+              <li>개인정보 처리방침</li>
+              <li>쿠키 설정</li>
+              <li>회사 정보</li>
+            </ul>
+            <div class="select-area">
+              <img
+                class="select-button"
+                src="../../assets/image/select-img.png"
+                alt=""
+              />
+              <select name="" id="">
+                <option value="">한국어</option>
+                <option value="">English</option>
+              </select>
+              <img
+                class="arrow-down"
+                src="../../assets/image/select-image2.png"
+                alt=""
+              />
+            </div>
+            <div class="footer-content">
+              <p>
+                넷플릭스서비시스코리아 유한회사 통신판매업신고번호:
+                제2018-서울종로-0426호 전화번호: 080-001-9587
+              </p>
+              <p>대표: 레지널드 숀 톰프슨</p>
+              <p>이메일 주소: korea@netflix.com</p>
+              <p>
+                주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동
+                20층 우편번호 03161
+              </p>
+              <p>사업자등록번호: 165-87-00119</p>
+              <p>클라우드 호스팅: Amazon Web Services Inc.</p>
+              <p><a href="">공정거래위원회 웹사이트</a></p>
+            </div>
           </div>
         </div>
       </div>
